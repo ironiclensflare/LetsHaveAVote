@@ -1,4 +1,7 @@
 node {
+	stage('Get source from git')
+    git 'https://github.com/ironiclensflare/LetsHaveAVote.git'
+	
 	stage('Restore NuGet packages')
 	bat 'C:\\Users\\Stuart\\Desktop\\nuget.exe restore'
 	
